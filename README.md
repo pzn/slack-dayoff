@@ -5,7 +5,9 @@ slack-dayoff
 # umm, what?
 
 a rudimentary app to take days off on Slack...
-as an excuse to do some Python!
+
+
+no, in fact, it is more an exercise to do some Python!
 
 # slack commands
 
