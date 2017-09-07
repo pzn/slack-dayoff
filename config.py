@@ -2,7 +2,9 @@ import os, pathlib
 
 
 DEBUG = True
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + str(pathlib.Path(__file__).parent) + '/db.sqlite'
+SQLALCHEMY_DATABASE_URI = os.environ.get(
+    'DATABASE_URL',
+    'sqlite:///' + str(pathlib.Path(__file__).parent) + '/db.sqlite')
 
 SLACK_OAUTH_ACCESS_URL = 'https://slack.com/api/oauth.access'
 SLACK_POST_MESSAGE_URL = 'https://slack.com/api/chat.postMessage'
