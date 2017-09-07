@@ -9,13 +9,9 @@ a rudimentary app to take days off on Slack...
 
 no, in fact, it is more an exercise to do some Python!
 
-# slack commands
-
-- `/dayoff help`: to display available commands
-- `/dayoff YYYY-mm-dd`: to take a day off (eg: `/dayoff 2025-01-02`)
-- `/dayoff ls`: list the three upcoming days off
-
 # run the app
+
+You need Python 3.6.x.
 
 ```
 git clone https://github.com/pzn/slack-dayoff.git
@@ -26,6 +22,12 @@ python3 manage.py runserver
 ```
 
 and read `config.py` for the required variables to run the app.
+
+# slack commands
+
+- `/dayoff help`: to display available commands
+- `/dayoff YYYY-mm-dd`: to take a day off (eg: `/dayoff 2025-01-02`)
+- `/dayoff ls`: list the three upcoming days off
 
 # live demo
 
