@@ -15,6 +15,18 @@ no, in fact, it is more an exercise to do some Python!
 - `/dayoff YYYY-mm-dd`: to take a day off (eg: `/dayoff 2025-01-02`)
 - `/dayoff ls`: list the three upcoming days off
 
+# run the app
+
+```
+git clone https://github.com/pzn/slack-dayoff.git
+cd slack-dayoff
+pip install -r requirements.txt
+python3 manage.py db upgrade
+python3 manage.py runserver
+```
+
+and read `config.py` for the required variables to run the app.
+
 # live demo
 
 the app is deployed on Heroku, and there is a Slack app available!
